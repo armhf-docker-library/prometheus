@@ -1,4 +1,4 @@
-FROM armhfbuild/golang:1.5
+FROM armhfbuild/golang:1.5.3
 
 RUN GO15VENDOREXPERIMENT=1 go get github.com/prometheus/prometheus/cmd/...
 RUN mkdir -p /prometheus \
